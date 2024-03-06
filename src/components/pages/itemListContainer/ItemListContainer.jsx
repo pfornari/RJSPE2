@@ -1,7 +1,7 @@
-import { ItemList } from "./ItemList";
 import { getProducts } from "../../../data";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
   const { category } = useParams();
@@ -10,7 +10,6 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     setIsLoading(true);
-
     getProducts().then((resp) => {
       if (category) {
         const productsFilter = resp.filter(
@@ -20,7 +19,6 @@ const ItemListContainer = () => {
       } else {
         setProducts(resp);
       }
-
       setIsLoading(false);
     });
   }, [category]);

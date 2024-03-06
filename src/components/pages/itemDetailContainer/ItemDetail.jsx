@@ -10,15 +10,15 @@ const ItemDetail = ({ item }) => {
         </div>
         <div className={"containerDetail"}>
           <h2 style={{ fontFamily: "monospace" }}>
-            <span style={{ fontSize: "23px" }}>Nombre:</span>{" "}
+            <span style={{ fontSize: "25px" }}>Nombre:</span>{" "}
             {item.title}
           </h2>
           <h2 style={{ fontFamily: "monospace" }}>
-            <span style={{ fontSize: "23px" }}>Descripcion:</span>{" "}
+            <span style={{ fontSize: "25px" }}>Descripcion:</span>{" "}
             {item.description}
           </h2>
           <h2 style={{ fontFamily: "monospace" }}>
-            <span style={{ fontSize: "23px" }}>Precio:</span> $
+            <span style={{ fontSize: "25px" }}>Precio:</span> $
             {item.price}.-
           </h2>
         </div>

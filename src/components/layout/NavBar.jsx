@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <>
       <div className="containerNavBar">
-        <Link to="/" href="#home" style={{ color: "beige" }}>
+        <Link to="/" href="#home" style={{ color: "white" }}>
           Mercadito
         </Link>
         <ul className="categories">

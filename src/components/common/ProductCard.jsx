@@ -8,13 +8,13 @@ import {
   Typography,
 } from "@mui/material";
 
-export const ProductCard = ({ img, title, description, precio, id }) => {
+const ProductCard = ({ img, title, description, price, id }) => {
   return (
-    <Card sx={{ width: 345, height: 350, backgroundColor: "white" }}>
+    <Card sx={{ width: 345, height: 650, backgroundColor: "white" }}>
     <CardMedia
-      sx={{ height: 140 }}
+      sx={{ height: 440 }}
       image={img}
-      title="test"
+      title="Test"
     />
     <CardContent sx={{ height: 150 }}>
       <Typography
@@ -29,7 +29,7 @@ export const ProductCard = ({ img, title, description, precio, id }) => {
         {description}
       </Typography>
       <Typography variant="subtitle1" textAlign={"center"}>
-        ${precio}.-
+        ${price}.-
       </Typography>
     </CardContent>
     <CardActions style={{ display: "flex", justifyContent: "center" }}>
@@ -46,3 +46,5 @@ export const ProductCard = ({ img, title, description, precio, id }) => {
   </Card>
   );
 };
+
+export default ProductCard;

@@ -1,9 +1,9 @@
-import { ProductCard } from "../../common/ProductCard";
-import "./ItemListContainer.css"
+import ProductCard from "../../common/ProductCard";
+import "./ItemList.css"
 
 const ItemList = ({ products }) => {
   return (
-    <div className="cardContainer">
+    <div className="cardsContainer">
       {products.map(({id, img, title, description, price}) => {
         return (
           <ProductCard
